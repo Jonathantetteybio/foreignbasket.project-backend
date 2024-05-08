@@ -6,7 +6,7 @@ const Product = require("./Products");
 const Order = require("./Orders");
 const User = require("./Users");
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 // Middlewares
 app.use(express.json());
