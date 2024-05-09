@@ -6,7 +6,7 @@ const Product = require("./Products");
 const Order = require("./Orders");
 const User = require("./Users");
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3005;
 
 // Middlewares
 app.use(express.json());
@@ -140,5 +140,3 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
-
-module.exports = app;
